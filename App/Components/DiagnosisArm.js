@@ -149,15 +149,6 @@ class DiagnosisArm extends React.Component {
 			Severity: 'Medium',
 			/*comment*/
 	  },
-		{
-			title: 'Cerebral Contusions',
-			details: 'Severity: High\n\n' +
-			'Symptoms: Nausea, Dizziness, Headaches, Seizures\n\n' +
-			'Description: Bruising of the brain. Caused by taking hits to the head. Shares many same causes as concussions, but with more severe results.\n\n' +
-			'Ramsay Law Firm, SpinalCord.com',
-			Severity: 'High',
-		}
-
 	];
 
 const styles = StyleSheet.create({
