@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
 } from 'react-native';
-import AppContainer from './App/AppContainer';
+import AppContainer from './App/Containers/AppContainer';
 import MainScreen from './App/Navigator/AppNavigator';
 
 export default class main extends Component {
