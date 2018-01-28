@@ -10,7 +10,7 @@ export default class main extends Component {
   render() {
     return (
       // <AppContainer/>
-      <AppContainer />
+      <MainScreen />
     );
   }
 };

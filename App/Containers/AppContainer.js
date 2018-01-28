@@ -5,7 +5,8 @@ import {
 } from 'native-base';
 import { Navigator } from 'react-native';
 
-import SideMenu from '../Components/SideMenu'
+import SideMenu from '../Components/SideMenu';
+import Home from '../Components/Home';
 
 export default class AppContainer extends Component {
   constructor(props) {

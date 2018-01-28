@@ -22,9 +22,10 @@ export default class SideMenu extends Component {
   render() {
     // const { navigate } = this.props.navigation;
     let list = [{
-      title: 'Games',
+      title: 'Home',
       onPress: () => {
         // navigate('Games');
+        navigate('Home', {})
       }
     }, {
       title: 'Profile',
