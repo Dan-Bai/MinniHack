@@ -9,6 +9,7 @@
   "author": "Dan Bai",
   "license": "ISC",
   "dependencies": {
+    "exp": "^49.0.2",
     "expo": "^24.0.2",
     "native-base": "^2.3.6",
     "react": "^16.2.0",
