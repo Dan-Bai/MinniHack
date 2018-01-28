@@ -13,6 +13,7 @@ import Home from '../Components/Home';
 import Assess from '../Components/Assess';
 import Prepare from '../Components/Prepare';
 import Steps from '../Components/Steps';
+import DiagnosisArm from '../Components/DiagnosisArm'
 import DiagnosisHead from '../Components/DiagnosisHead';
 import DiagnosisTorso from '../Components/DiagnosisTorso';
 import DiagnosisFoot from '../Components/DiagnosisFoot';
@@ -23,6 +24,7 @@ const AppNavigator = StackNavigator({
   Diagnosis: { screen: DiagnosisHead },
   Prepare: { screen: Prepare },
   Steps: { screen: Steps },
+  DiagnosisA: { screen: DiagnosisArm },
   DiagnosisT: { screen: DiagnosisTorso },
   DiagnosisF: { screen: DiagnosisFoot },
 });

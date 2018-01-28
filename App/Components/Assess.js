@@ -45,13 +45,13 @@ class Assess extends React.Component {
         <TouchableOpacity
           style={styles.armLeft}
           onPress = {
-            () => console.log("ArmLeft")
+            () => navigate("DiagnosisA")
           }
           />
         <TouchableOpacity
           style={styles.armRight}
           onPress = {
-            () => console.log("ArmRight")
+            () => navigate("DiagnosisA")
           }
           />
         <TouchableOpacity
