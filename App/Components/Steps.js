@@ -30,7 +30,7 @@ class Item extends React.Component {
       <View style={styles.itemContainer}>
         <View style={styles.touchContainer}>
           <View style={styles.item}>
-
+						<Text style={styles.text}>{this.props.itemInfo.title}</Text>
           </View>
           <View style={styles.image}>
 
@@ -120,7 +120,12 @@ const styles = StyleSheet.create({
     width:require('Dimensions').get('window').width,
     position:'absolute',
     resizeMode:'repeat',
-  }
+  },
+	text: {
+		fontSize: 20,
+		color: 'white',
+		fontWeight: 'bold',
+	}
 
 });
 
