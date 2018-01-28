@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
+  Image,
   View,
   Text,
   Button,
@@ -28,22 +29,20 @@ class Home extends React.Component {
     let { navigate } = this.props.navigation;
     return (
       <View style = {styles.homeContainer}>
+        <Image style={styles.image} source={require('../Src/_Image/menuTato.png')}/>
+
         <TouchableOpacity
-          style = {styles.nextScreen}
+          style={styles.assess}
           onPress = {
-            () => navigate('Assess')
+            () => navigate("Assess")
           }
-          >
-            <Text style={styles.buttonText}> Assess </Text>
-        </TouchableOpacity>
+          />
         <TouchableOpacity
-          style = {styles.nextScreen}
+          style={styles.prepare}
           onPress = {
-            () => navigate('Prepare')
+            () => navigate("Prepare")
           }
-          >
-            <Text style={styles.buttonText}> Prepare </Text>
-        </TouchableOpacity>
+          />
       </View>
     );
   }
@@ -60,14 +59,37 @@ const styles = StyleSheet.create({
     height: '25%',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#00f',
+    backgroundColor: '#72A0C1',
     margin: 20,
   },
   buttonText: {
     color: '#fff',
     fontWeight: 'bold',
     fontSize: 40,
-  }
+  },
+  image: {
+    flex:1,
+    resizeMode: 'contain',
+    justifyContent: 'center',
+  },
+  assess: {
+    position: 'absolute',
+    top: '31.5%',
+    left: '20%',
+    width: '30%',
+    height: '15%',
+    borderRadius: 10,
+    backgroundColor: 'transparent',
+  },
+  prepare: {
+    position: 'absolute',
+    top: '31.5%',
+    left: '52%',
+    width: '30%',
+    height: '15%',
+    borderRadius: 10,
+    backgroundColor: 'transparent',
+  },
 });
 
 export default Home;
