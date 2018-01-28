@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
+  Image,
   View,
   Text,
   Button,
@@ -33,13 +34,20 @@ const Duration = tcomb.enums({
 
 const Survey = tcomb.struct({
   Sport: Sport,
-  Experience: Duration,
   Number: tcomb.Number,
+  Experience: Duration,
 })
 
 let options = {
     fields: {
-
+      Number: {
+        label: 'Duration',
+        placeholders: '4',
+      },
+      Experience: {
+        auto: 'none',
+        placeholders: 'Month',
+      }
     },
 };
 
@@ -62,30 +70,38 @@ class Prepare extends React.Component {
   render() {
     let { navigate } = this.props.navigation;
     return (
-      <KeyboardAwareScrollView
-      style={{ backgroundColor: '#ffffff' }}
-      resetScrollToCoords={{ x: 0, y: 0 }}
-      contentContainerStyle={ styles.container }
-      scrollEnabled={true}
-      >
-      <View style={{ flex: 4, justifyContent: 'center' }}>
-        <Form
-          ref={(ref) => this._form = ref}
-          type={Survey}
-          options={options}
-        />
-      </View>
-      <View style={ styles.buttonBox }>
-        <TouchableOpacity
-           style={styles.button}
-           onPress={
-             () => Console.log("Submit")
-           }
-         >
-           <Text style={styles.text}> Check </Text>
-        </TouchableOpacity>
-      </View>
-    </KeyboardAwareScrollView>
+      <View style={{flex:1, backgroundColor:'transparent'}}>
+        <View>
+          <Image
+            style={styles.background}
+            source={require('../Src/_Image/Background.png')}
+          />
+        </View>
+        <KeyboardAwareScrollView
+        style={{ backgroundColor: 'transparent' }}
+        resetScrollToCoords={{ x: 0, y: 0 }}
+        contentContainerStyle={ styles.container }
+        scrollEnabled={true}
+        >
+        <View style={{ flex: 4, justifyContent: 'center', backgroundColor: 'transparent' }}>
+          <Form
+            ref={(ref) => this._form = ref}
+            type={Survey}
+            options={options}
+          />
+        </View>
+        <View style={ styles.buttonBox }>
+          <TouchableOpacity
+             style={styles.button}
+             onPress={
+               () => navigate('Steps')
+             }
+           >
+             <Text style={styles.text}> Check </Text>
+          </TouchableOpacity>
+        </View>
+      </KeyboardAwareScrollView>
+    </View>
     );
   }
 }
@@ -123,6 +139,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 30,
   },
+  background: {
+    top:0,
+    left:0,
+    height:require('Dimensions').get('window').height,
+    width:require('Dimensions').get('window').width,
+    position:'absolute',
+    resizeMode:'repeat',
+  }
 });
 
 export default Prepare;
