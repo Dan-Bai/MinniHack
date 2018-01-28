@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "name": "potatoGo",
+    "slug": "potatoGo",
+    "sdkVersion": "24.0.0",
+    "privacy": "public"
+  }
+}

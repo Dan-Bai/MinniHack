@@ -1,0 +1,18 @@
+{
+  "name": "chess",
+  "version": "1.0.0",
+  "description": "just a test app for playing chess",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Bai",
+  "license": "ISC",
+  "dependencies": {
+    "expo": "^24.0.2",
+    "native-base": "^2.3.6",
+    "react": "^16.2.0",
+    "react-native": "^0.51.0",
+    "react-navigation": "^1.0.0-beta.23"
+  }
+}
