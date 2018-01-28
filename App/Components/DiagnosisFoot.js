@@ -78,8 +78,8 @@ class Item extends React.Component {
             }
             >
 
-						{this.props.itemInfo.Severity == 'High' ?
-							<Image style={styles.image} source={require('../Src/_Image/sevTato.png')}/> :
+						{this.props.itemInfo.Severity == 'Low' ?
+							<Image style={styles.image} source={require('../Src/_Image/mildTato.png')}/> :
 							<Image style={styles.image} source={require('../Src/_Image/medTato.png')}/>
 						}
 
@@ -125,38 +125,29 @@ class Diagnosis extends React.Component {
 	let list = [
 
 	  {
-	    title: 'CTE (Chronic Traumatic Encephalopathy)',
-			details: 'Severity: High\n\n' +
-			'Symptoms: Memory Problems, Personality Changes (Depression or Suicidal Thoughts), Aggression, Difficulty Balancing\n\n' +
-			'Description: Often caused by taking multiple hits to the head without losing consciousness.\n\n' +
-			'Source: Ramsay Law Firm, Alzheimers Association',
-			Severity: 'High',
+	    title: 'Patellar tendinitis (knee pain)',
+			details: 'Severity: Low\n\n' +
+			'Symptoms: Knee Pain\n\n' +
+			'Description: Pain in the knees can be a signal that over-use has weakened the quadriceps. This can be alleviated through physical therapy.\n\n' +
+			'Source: Sports MED',
+			Severity: 'Low',
 		},
 	  {
-	    title: 'Concussions or Traumatic Brain Injury',
+	    title: 'Knee Injury',
 			details: 'Severity: Medium\n\n' +
-			'Symptoms: Slurred Speech, Headache, Falling Unconscious, Confusion, Amnesia, Dizziness, Fatigue\n\n' +
-			'Description: Brain injury caused by the brain being jostled in the skull. May lead to bleeding in or around the brain which can occur immeditately or shortly after the incident.\n\n' +
-			'Source: Ramsay Law Firm, Mayo Clinic',
+			'Symptoms: Knee Pain\n\n' +
+			'Description: Common knee injuries are tears to the ACL or PCL. If not treated appropriately, these can drastically reduce a players carrer. \n\n' +
+			'Source: Sports MED',
 			Severity: 'Medium',
 	  },
 	  {
-	    title: 'Intracranial Hematomas',
-			details: 'Severity: High\n\n' +
-			'Symptoms: Paralysis, Fainting, Difficulty Speaking, Headaches, Seizures, Sensitivity to Light\n\n' +
+	    title: 'Sprains',
+			details: 'Severity: Low\n\n' +
+			'Symptoms: Pain\n\n' +
 			'Description: Blood building up in the area around the brain, creating pressure on the skull.\n\n' +
-			'Source: Ramsay Law Firm, Mayo Clinic',
-			Severity: 'High',
+			'Source: Wikipedia',
+			Severity: 'Low',
 	  },
-		{
-			title: 'Cerebral Contusions',
-			details: 'Severity: High\n\n' +
-			'Symptoms: Nausea, Dizziness, Headaches, Seizures\n\n' +
-			'Description: Bruising of the brain. Caused by taking hits to the head. Shares many same causes as concussions, but with more severe results.\n\n' +
-			'Ramsay Law Firm, SpinalCord.com',
-			Severity: 'High',
-		}
-
 	];
 
 const styles = StyleSheet.create({

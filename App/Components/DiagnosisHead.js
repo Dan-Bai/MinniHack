@@ -147,6 +147,7 @@ class Diagnosis extends React.Component {
 			'Description: Blood building up in the area around the brain, creating pressure on the skull.\n\n' +
 			'Source: Ramsay Law Firm, Mayo Clinic',
 			Severity: 'High',
+			/*comment*/
 	  },
 		{
 			title: 'Cerebral Contusions',
