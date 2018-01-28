@@ -57,7 +57,7 @@ class Assess extends React.Component {
         <TouchableOpacity
           style={styles.torso}
           onPress = {
-            () => console.log("DiagnosisT")
+            () => navigate("DiagnosisT")
           }
           />
       </View>
